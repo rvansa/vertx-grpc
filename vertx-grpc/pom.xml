@@ -19,7 +19,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.vertx</groupId>
+    <groupId>io.github.crac.io.vertx</groupId>
     <artifactId>vertx-grpc-parent</artifactId>
     <version>4.3.9-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
@@ -125,7 +125,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-grpc-protoc-plugin</artifactId>
-      <version>${project.version}</version>
+      <version>${forked.version}</version>
       <optional>true</optional>
     </dependency>
   </dependencies>
@@ -143,7 +143,7 @@
         <plugin>
           <groupId>io.vertx</groupId>
           <artifactId>vertx-grpc-protoc-plugin</artifactId>
-          <version>${project.version}</version>
+          <version>${forked.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -166,7 +166,7 @@
               <id>vertx-grpc-protoc-plugin</id>
               <groupId>io.vertx</groupId>
               <artifactId>vertx-grpc-protoc-plugin</artifactId>
-              <version>${project.version}</version>
+              <version>${forked.version}</version>
               <mainClass>io.vertx.grpc.protoc.plugin.VertxGrpcGenerator</mainClass>
             </protocPlugin>
           </protocPlugins>
